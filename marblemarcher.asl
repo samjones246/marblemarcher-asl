@@ -152,7 +152,7 @@ update
 }
 
 gameTime {
-    double total_mills = (vars.gameTime.Current)*(16.66666666666);
+    double total_mills = (vars.gameTime.Current / 60.0) * 1000.0;
     return new TimeSpan(0,0,0,0,Convert.ToInt32(total_mills));
 }
 
